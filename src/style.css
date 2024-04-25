@@ -1,0 +1,44 @@
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #333;
+  color: white;
+  width: 200px;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+
+.collapsed {
+  width: 0;
+  transition: width 0.3s;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.main {
+  flex-grow: 1;
+  background-color: #ccc;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}

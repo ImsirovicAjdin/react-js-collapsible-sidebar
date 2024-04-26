@@ -8,7 +8,7 @@
   color: white;
   width: 200px;
   transition: width 0.3s;
-  overflow: hidden;
+  position: relative; /* Ensure this is set to contain the button */
 }
 
 .collapsed {
@@ -18,9 +18,19 @@
 
 .toggle-btn {
   position: absolute;
-  right: 10px;
+  right: 0; /* Align button to the right edge of the sidebar */
+  transform: translateX(100%); /* Move it outside the sidebar */
   top: 10px;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: #666;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main {

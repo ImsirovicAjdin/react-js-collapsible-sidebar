@@ -8,7 +8,8 @@
   color: white;
   width: 200px;
   transition: width 0.3s;
-  position: relative; /* Ensure this is set to contain the button */
+  position: relative;
+  padding: 20px; /* Add padding for aesthetic spacing */
 }
 
 .collapsed {
@@ -18,8 +19,8 @@
 
 .toggle-btn {
   position: absolute;
-  right: 0; /* Align button to the right edge of the sidebar */
-  transform: translateX(100%); /* Move it outside the sidebar */
+  right: 0;
+  transform: translateX(100%);
   top: 10px;
   cursor: pointer;
   width: 40px;
@@ -31,6 +32,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px; /* Spacing from the toggle button */
+}
+
+.sidebar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px 0;
 }
 
 .main {

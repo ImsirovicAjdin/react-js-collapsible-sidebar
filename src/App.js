@@ -12,6 +12,11 @@ function App() {
     <div className="app">
       <div className={`sidebar ${isSidebarOpen ? '' : 'collapsed'}`}>
         <button onClick={toggleSidebar} className="toggle-btn">Toggle</button>
+        <ul className="sidebar-links">
+          <li><a href="#home">🏠 Home</a></li>
+          <li><a href="#about">ℹ️ About</a></li>
+          <li><a href="#contact">📞 Contact</a></li>
+        </ul>
       </div>
       <div className="main">
         <h1>Table Heading</h1>

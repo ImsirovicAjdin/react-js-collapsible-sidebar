@@ -2,24 +2,25 @@
   display: flex;
   height: 100vh;
 }
-
 .sidebar {
   background-color: #333;
   color: white;
   width: 200px;
-  transition: width 0.3s;
+  transition: width 0.3s, padding 0.3s;
   position: relative;
-  padding: 20px; /* Add padding for aesthetic spacing */
+  padding: 20px;
+  overflow: hidden; /* This ensures content is hidden when sidebar is collapsed */
 }
 
 .collapsed {
   width: 0;
-  transition: width 0.3s;
+  padding: 20px 0; /* Reduces padding to 0 on the sides when collapsed */
+  transition: width 0.3s, padding 0.3s;
 }
 
 .toggle-btn {
   position: absolute;
-  right: 0;
+  right: 50px;
   transform: translateX(100%);
   top: 10px;
   cursor: pointer;
@@ -37,7 +38,7 @@
 .sidebar-links {
   list-style: none;
   padding: 0;
-  margin-top: 20px; /* Spacing from the toggle button */
+  margin-top: 20px;
 }
 
 .sidebar-links li a {
@@ -46,24 +47,4 @@
   font-size: 16px;
   display: block;
   padding: 10px 0;
-}
-
-.main {
-  flex-grow: 1;
-  background-color: #ccc;
-  padding: 20px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table, th, td {
-  border: 1px solid black;
-}
-
-th, td {
-  padding: 8px;
-  text-align: left;
 }
